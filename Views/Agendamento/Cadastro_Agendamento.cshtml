@@ -1,0 +1,416 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- bibliotecas -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/login.css">
+
+
+    <title>Cadastro de Agendamento</title>
+
+    <style>
+        /* Estilo para o overlay (fundo escuro) */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+            z-index: 9998; /* Colocar abaixo do loader */
+            display: none; /* Inicialmente escondido */
+        }
+
+        /* Estilo para o loader */
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 30px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para o loader */
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            z-index: 9999; /* Colocar acima do overlay */
+            display: none; /* Inicialmente escondido */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
+    <!-- Cabeçalho com logo e nome da empresa -->
+    <div style="background-color: #1e90ff; color: #EAE7DC; padding: 10px; text-align: center;">
+        <a href="#home" style="text-decoration: none; color: #EAE7DC; display: inline-flex; align-items: center;">
+            <img src="~/images/Home/logo.png" alt="MIGHTVR Logo" style="width: 100px; height: 100px; margin-right: 10px;">
+            <h1 style="margin: 0; font-size: 36px; color: #EAE7DC;">MAQCENTER</h1>
+        </a>
+    </div>
+
+    <div id="agendamentoModal" class="container">
+        <div class="modal-header" style="background-color: #1e90ff; color: #EAE7DC; border-color: #A65F3C;">
+            <h1 class="modal-title" id="exampleModalLabel">Adicionar Agendamento</h1>
+        </div>
+
+        <div class="modal-body">
+            <form>
+                <p style="color:red">Campos com * vermelho são obrigatórios</p>
+                <div class="mb-3 d-flex align-items-center">
+                    <input type="hidden" id="TxtId" class="form-check-input" value="10:00" style="margin-right: 10px;" disabled>
+                </div>
+
+                <!-- Campo de data -->
+                <div class="mb-3 d-flex align-items-center">
+                    <input id="data_agdt" type="date" class="form-control" style="width: 300px;" placeholder="Escolha a data do agendamento" oninput="consultarAgendamento()" min="{{ today }}">
+                    <label for="data_agdt" style="color:red; margin-left: 5px;">*</label>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="col-md-6">
+                        @Html.DropDownList("TipoServico",
+                                 new SelectList(ViewBag.lstTipoServico, "Value", "Text", null),
+                                 "Escolha o serviço",
+                                 new { @class = "form-control", @style = "background-color: #EAE7DC; color: #333;", required = "required" })
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color:red">*</label>
+                    </div>
+                </div>
+
+                <fieldset>
+
+                    <legend style="display: inline-flex; align-items: center;">
+                        Escolha o horário de atendimento:
+                        <label style="color:red; margin-left: 5px; vertical-align: middle;">*</label>
+                    </legend>
+
+
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="checkbox" id="chk08" class="form-check-input" value="08:00" style="margin-right: 10px;" data-group="horario" disabled>
+                        <label class="form-check-label" for="chk08">Atendimento das 8:00</label>
+                        <span id="Span08" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="checkbox" id="chk10" class="form-check-input" value="10:00" style="margin-right: 10px;" data-group="horario" disabled>
+                        <label class="form-check-label" for="chk10">Atendimento das 10:00</label>
+                        <span id="Span10" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="checkbox" id="chk13" class="form-check-input" value="13:00" style="margin-right: 10px;" data-group="horario" disabled>
+                        <label class="form-check-label" for="chk13">Atendimento das 13:00</label>
+                        <span id="Span13" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="checkbox" id="chk15" class="form-check-input" value="15:00" style="margin-right: 10px;" data-group="horario" disabled>
+                        <label class="form-check-label" for="chk15">Atendimento das 15:00</label>
+                        <span id="Span15" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="checkbox" id="chk17" class="form-check-input" value="17:00" style="margin-right: 10px;" data-group="horario" disabled>
+                        <label class="form-check-label" for="chk17">Atendimento das 17:00</label>
+                        <span id="Span17" style="color:red;"></span>
+                    </div>
+
+                    <div class="mb-3 d-flex align-items-center">
+                        <input type="checkbox" id="chk19" class="form-check-input" value="19:00" style="margin-right: 10px;" data-group="horario" disabled>
+                        <label class="form-check-label" for="chk19">Atendimento das 19:00</label>
+                        <span id="Span19" style="color:red;"></span>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" id="IdEdt" value="">
+            </form>
+        </div>
+
+        <div class="modal-footer" style="display: flex; justify-content: center;">
+            <button type="button" class="btn btn-secondary" onclick="window.location.href = '/Home/Index';">Voltar</button>
+            <button type="button" class="btn btn-primary" onclick="InserirAgendamento()">Adicionar</button>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
+    <script>
+
+        var listaOriginalHorario;
+        // Impede a digitação manual no campo de data
+        document.getElementById('data_agdt').addEventListener('keydown', function (e) {
+            e.preventDefault(); // Bloqueia qualquer entrada do teclado
+        });
+
+        $(document).ready(function () {
+            $('input[type="checkbox"]').click(function () {
+                var isChecked = $(this).prop("checked");
+                var groupId = $(this).attr("data-group");
+
+                if (isChecked) {
+                    $('input[type="checkbox"][data-group="' + groupId + '"]').not($(this)).prop("checked", false);
+                }
+            });
+        });
+
+        function consultarAgendamento() {
+            ativarCheckboxes()
+            limparTextosSpans()
+            desmarcarCheckboxes()
+
+            var data = $("#data_agdt").val();
+            console.log(data);
+            $.ajax({
+                type: "GET",
+                url: "/Agendamento/ConsultarAgendamento",
+                data: { data: data },
+                success: function (response) {
+
+                    response.forEach(function (item) {
+                        console.log(item.horario);
+
+                        switch (item.horario) {
+                            case "08:00:00":
+                                $("#chk08").prop("disabled", true);  // Marcar e desabilitar
+                                $("#Span08").text("Horario Indisponivel");
+                                break;
+                            case "10:00:00":
+                                $("#chk10").prop("disabled", true);  // Marcar e desabilitar
+                                $("#Span10").text("Horario Indisponivel");
+                                break;
+                            case "13:00:00":
+                                $("#chk13").prop("disabled", true);  // Marcar e desabilitar
+                                $("#Span13").text("Horario Indisponivel");
+                                break;
+                            case "15:00:00":
+                                $("#chk15").prop("disabled", true);  // Marcar e desabilitar
+                                $("#Span15").text("Horario Indisponivel");
+                                break;
+                            case "17:00:00":
+                                $("#chk17").prop("disabled", true);  // Marcar e desabilitar
+                                $("#Span17").text("Horario Indisponivel");
+                                break;
+                            case "19:00:00":
+                                $("#chk19").prop("disabled", true);  // Marcar e desabilitar
+                                $("#Span19").text("Horario Indisponivel");
+                                break;
+                            default:
+                                break;
+                        }
+                    });
+                },
+                error: function (error) {
+                    // Manipule os erros aqui
+                    console.error("Erro na requisição AJAX:", error);
+                }
+            });
+        }
+
+        function ativarCheckboxes() {
+            // Seletor para encontrar todos os checkboxes dentro do modal
+            var checkboxes = document.querySelectorAll('#agendamentoModal input[type="checkbox"]');
+
+            // Itera sobre os checkboxes encontrados e ativa-os
+            checkboxes.forEach(function (checkbox) {
+                checkbox.disabled = false;
+            });
+        }
+
+        function limparTextosSpans() {
+            // Obtém todos os elementos <span> dentro do formulário
+            var spans = document.querySelectorAll('#agendamentoModal form span');
+
+            // Itera sobre os spans e define seu conteúdo como vazio
+            spans.forEach(function (span) {
+                span.textContent = '';
+            });
+        }
+
+        function desmarcarCheckboxes() {
+            // Obtém todos os checkboxes dentro do formulário
+            var checkboxes = document.querySelectorAll('#agendamentoModal form input[type="checkbox"]');
+
+            // Itera sobre os checkboxes e desmarca todos
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = false;
+            });
+        }
+
+        function limparFormulario() {
+            // Limpar o campo oculto TxtId
+            document.getElementById("TxtId").value = '';  // Remova 'usuarioId' ou defina outro valor conforme necessário
+
+            // Limpar campos de texto
+            document.querySelectorAll('#agendamentoModal form input[type="text"]').forEach(function (input) {
+                input.value = '';
+            });
+
+            // Limpar campos de seleção (dropdown)
+            document.querySelectorAll('#agendamentoModal form select').forEach(function (select) {
+                select.selectedIndex = 0;
+            });
+
+            // Desmarcar checkboxes e desabilitar
+            document.querySelectorAll('#agendamentoModal form input[type="checkbox"]').forEach(function (checkbox) {
+                checkbox.checked = false;
+                checkbox.disabled = true;  // Desabilitar checkboxes após a limpeza
+            });
+
+            // Limpar textos dos spans
+            limparTextosSpans();
+        }
+
+        function obterDataHoraFormatada() {
+            // Obtém a data e hora atuais
+            var dataHoraAtual = new Date();
+
+            // Formata a data e hora para o formato desejado (por exemplo, "yyyy-MM-dd HH:mm:ss.fff")
+            var dataHoraFormatada = dataHoraAtual.getFullYear() + "-" +
+                ("0" + (dataHoraAtual.getMonth() + 1)).slice(-2) + "-" +
+                ("0" + dataHoraAtual.getDate()).slice(-2) + " " +
+                ("0" + dataHoraAtual.getHours()).slice(-2) + ":" +
+                ("0" + dataHoraAtual.getMinutes()).slice(-2) + ":" +
+                ("0" + dataHoraAtual.getSeconds()).slice(-2) + "." +
+                ("00" + dataHoraAtual.getMilliseconds()).slice(-3);
+
+            // Retorna a data e hora formatada
+            return dataHoraFormatada;
+        }
+
+        function InserirAgendamento() {
+            // Data from hidden field or any other necessary values
+            var dataC = obterDataHoraFormatada();  // Assuming this function formats the current date/time.
+            var data = $("#data_agdt").val();
+            var usuario = $("#DropUsuario").val();  // Getting value for "DropUsuario"
+            var tipoServico = $('#TipoServico option:selected').val(); // Getting value for "TipoServico"
+            var atendimentos = [];
+
+            // Check if the time slots are selected and push them into the atendimentos array
+            if ($("#chk08").prop("checked")) atendimentos.push($("#chk08").val());
+            if ($("#chk10").prop("checked")) atendimentos.push($("#chk10").val());
+            if ($("#chk13").prop("checked")) atendimentos.push($("#chk13").val());
+            if ($("#chk15").prop("checked")) atendimentos.push($("#chk15").val());
+            if ($("#chk17").prop("checked")) atendimentos.push($("#chk17").val());
+            if ($("#chk19").prop("checked")) atendimentos.push($("#chk19").val());
+
+            // Validation checks
+            if (!data) {
+                alert("Por favor, selecione uma data de atendimento.");
+                return; // Stop execution if validation fails
+            }
+
+            if (!tipoServico) {
+                alert("Por favor, selecione o tipo de serviço.");
+                return; // Stop execution if validation fails
+            }
+
+            if (atendimentos.length === 0) {
+                alert("Por favor, selecione ao menos um horário.");
+                return; // Stop execution if no time slots are selected
+            }
+
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
+            // Collect data for AJAX request
+            var dados = {
+                dtHoraAgendamento: dataC,
+                dataAtendimento: data,
+                horario: atendimentos,
+                fkUsuarioId: usuario,
+                fkServicoId: tipoServico,
+            };
+
+            console.log(dados);
+
+            // Perform the AJAX request
+            $.ajax({
+                url: '/Agendamento/InserirAgendamentoCliente',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Agendamento Cadastrado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirAgendamento').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
+                    } else {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
+                    }
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: 'error',
+                        title: 'Erro',
+                        text: resultado.message,
+                        confirmButtonText: 'OK',
+                        width: '400px',  // Defina a largura desejada aqui
+                        padding: '20px', // Ajuste o preenchimento interno do alerta
+                        customClass: {
+                            popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                        }
+                    });
+                }
+            });
+        }
+
+    </script>
+    <script>
+        // Definindo a data mínima como a data atual usando JavaScript
+        document.getElementById('data_agdt').setAttribute('min', new Date().toISOString().split('T')[0]);
+    </script>
+</body>
+
+
+</html>

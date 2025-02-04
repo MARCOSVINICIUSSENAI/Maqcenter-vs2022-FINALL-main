@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+:root {
+    --azul: #1e90ff;
+    --branco: #ffffff;
+    --azulClaro:   #ceeff4; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--azulClaro);
+}
+html {
+    min-height: 100vh;
+}
+main{
+    min-height: calc(100vh - 100px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bem-vindo{ 
+    color: var(--azul) ;
+     font-family: 'Times New Roman';
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--azul) ;
+}
+
+p {
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--azulClaro);
+    border-radius: 50px;
+}
+
+input:focus, select:focus{
+    outline: 4px solid var(--azul) !important;
+}
+select option:hover{
+    background-color: var(--azul);
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 3.5em 0 2em 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    /* padding-bottom: 30px; */
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--azul);
+}
+
+
+footer {
+    max-height: 85px;
+    padding-top: .8em;
+}
+
+
+.page-maneger{
+    background-color: var(--branco);
+    margin-top: 2.5em;
+    border-radius: 8px;
+    box-shadow: 2px 0 10px -2px var(--azul);
+    height: 590px;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Butao voltar
+--------------------------------------------------------------*/
+button{
+    background-color: var(--azul) !important;
+    border: none !important;
+    color: var(--branco) !important;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--branco) !important;
+    color: var(--azul) !important;
+    border: 1px solid var(--azul) !important;
+}

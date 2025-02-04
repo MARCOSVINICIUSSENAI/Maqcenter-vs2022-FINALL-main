@@ -1,0 +1,225 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCadastro.cshtml";
+}
+<style>
+    /* Estilo para o overlay (fundo escuro) */
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+        z-index: 9998; /* Colocar abaixo do loader */
+        display: none; /* Inicialmente escondido */
+    }
+
+    /* Estilo para o loader */
+    #loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 30px;
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para o loader */
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        z-index: 9999; /* Colocar acima do overlay */
+        display: none; /* Inicialmente escondido */
+    }
+</style>
+<body>
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
+
+    <div id="custom_container" class="custom_container">
+        <div class="tab-content">
+            <h1 class="custom_logo "><a href="HTML/index.html#hero">MAQCENTER</a></h1>
+            <!-- Pills navs -->
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab-register" href="/Usuario/Login" role="tab"
+                       aria-controls="pills-register" aria-selected="false">Login</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                       aria-controls="pills-login" aria-selected="true">Cadastrar</a>
+                </li>
+            </ul>
+            <!-- Pills navs -->
+            <!-- Pills content -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                    <form>
+                        <div class="text-center mb-3">
+
+                            <!--
+
+                            -->
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                            </button>
+
+
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="loginNome" class="form-control" placeholder="Digite seu Nome"
+                                   required />
+                        </div>
+
+                        <!-- Email input -->
+                        <div class=" form-outline mb-4">
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Digite seu Email"
+                                   required />
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="loginPassword" class="form-control" required
+                                   placeholder="Digite sua senha" />
+
+                        </div>
+                        <div class="form-outline mb-4">
+                            <input type="text" id="loginTelefone" class="form-control" placeholder="Digite seu Telefone"
+                                   required />
+                        </div>
+                        <!-- 2 column grid layout -->
+                        <div class="row mb-4">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <!-- Checkbox -->
+
+                            </div>
+
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <!-- Simple link
+                                    <a href="#!">Esqueci a senha</a>
+                                -->
+
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div style="display: flex; justify-content: space-between;">
+                            <button type="button" id="send-button1" class="nav-link active btn btn-primary btn-block" style="flex: 1; margin-right: 5px;" onclick="InserirUsuario()">Cadastrar</button>
+                            <button type="button" id="send-button2" class="nav-link active btn btn-primary btn-block" style="flex: 1; margin-left: 5px;" onclick="window.location.href = '/Home/Index';">Voltar</button>
+                        </div>
+
+                        <!-- Register buttons -->
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
+<script>
+
+    function InserirUsuario() {
+        // Obtenha os valores dos controles HTML
+        var nome = $('#loginNome').val();
+        var email = $('#loginEmail').val();
+        var senha = $('#loginPassword').val();
+        var telefone = $('#loginTelefone').val();
+        var tipoUsuario = true;
+
+        // Validar os campos obrigatórios
+        if (nome.trim() === '') {
+            Swal.fire('Erro', 'O campo Nome é obrigatório.', 'error');  // SweetAlert2
+            return; // Impede o envio do formulário
+        }
+
+        if (email.trim() === '') {
+            Swal.fire('Erro', 'O campo E-mail é obrigatório.', 'error');
+            return;
+        }
+
+
+        if (senha.trim() === '') {
+            Swal.fire('Erro', 'O campo Senha é obrigatório.', 'error');
+            return;
+        }
+
+        if (telefone.trim() === '') {
+            Swal.fire('Erro', 'O campo Telefone é obrigatório.', 'error');
+            return;
+        }
+
+        // Validação de formato de telefone (exemplo simples para número de 10 dígitos)
+        var telefoneRegex = /^\d{10}$/;
+        if (!telefoneRegex.test(telefone)) {
+            Swal.fire('Erro', 'Por favor, insira um número de telefone válido (10 dígitos).', 'error');
+            return;
+        }
+        // Show the overlay and loader
+        $("#overlay").show();  // Exibir o overlay escuro
+        $("#loader").show();   // Exibir o loader
+        // Crie um objeto de usuário para enviar
+        var dados = {
+            Nome: nome,
+            Email: email,
+            Senha: senha,
+            Telefone: telefone,
+            TipoUsuario: tipoUsuario ? true : false
+        };
+
+        // Faça a chamada AJAX
+        $.ajax({
+            url: '/Usuario/InserirUsuario',
+            type: "POST",
+            dataType: "json",
+            data: dados,
+            success: function (resultado) {
+                // Hide the overlay and loader after the response
+                $("#overlay").hide();
+                $("#loader").hide();
+                if (resultado.success) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: 'success',
+                        title: 'Sucesso',
+                        text: 'Usuário cadastrado com sucesso!',
+                        confirmButtonText: 'OK'
+                    }).then(function () {
+                        // Fecha o modal
+                        $('#InserirUsuario').modal('hide');
+                        // Recarrega a página
+                        location.reload(); // Recarrega a página atual
+                    });
+                } else {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: 'error',
+                        title: 'Erro',
+                        text: resultado.message,
+                        confirmButtonText: 'OK'
+
+                    });
+                }
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro',
+                    text: 'Erro na requisição AJAX.',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+
+
+    }
+
+</script>

@@ -1,0 +1,802 @@
+﻿@model IEnumerable<MaqCenter.Models.UsuarioVM>
+@{
+    Layout = "~/Views/Shared/_LayoutGerenciamento.cshtml";
+}
+<style>
+    /* Estilo para o overlay (fundo escuro) */
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Cor escura com transparência */
+        z-index: 9998; /* Colocar abaixo do loader */
+        display: none; /* Inicialmente escondido */
+    }
+
+    /* Estilo para o loader */
+    #loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 30px;
+        background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para o loader */
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        z-index: 9999; /* Colocar acima do overlay */
+        display: none; /* Inicialmente escondido */
+    }
+</style>
+<body>
+    <!-- Overlay e Loader -->
+    <div id="overlay" style="display: none;"></div>
+    <div id="loader" style="display: none;">
+        <i class="fa fa-spinner fa-spin"></i> Carregando...
+    </div>
+    <section class="maneger-page-section">
+        <div class="container page-maneger">
+
+            <div class="add-user-button">
+                <h1 class="section-title cliente-title-maneger">Gerenciamento de Usuários</h1>
+                <br />
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-4">
+                            <input id="filtro" type="text" class="form-control" placeholder="Pesquisar Produtos..."
+                                   aria-label="Filtrar" aria-describedby="basic-addon2">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <!-- Alteração para "text-md-end" para alinhar à direita apenas em telas médias e maiores -->
+                        <button class="btn btn-success btn-lg" onclick="" data-bs-toggle="modal"
+                                data-bs-target="#InserirUsuario">
+                            <i class="fa fa-plus"></i> Adicionar Cliente
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div style="max-height: 400px; overflow-y: auto;">
+                <!-- Tabela com cabeçalho fixo -->
+                <table id="TbClientes" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                    <!-- Cabeçalho fixo -->
+                    <thead style="background-color: chocolate; color: #EAE7DC;">
+                        <tr>
+                            <th style="border: 1px solid #ddd; padding: 8px; width: 50px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">#</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; width: 190px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Nome</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; width: 230px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Senha</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; width: 312px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Email</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; width: 160px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Telefone</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; width: 170px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Tipo de Usuário</th>
+                            <th class="editar" style="border: 1px solid #ddd; padding: 8px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Editar</th>
+                            <th class="excluir" style="border: 1px solid #ddd; padding: 8px; position: sticky; top: 0; background-color: #1e90ff; z-index: 2;">Excluir</th>
+                        </tr>
+                    </thead>
+                </table>
+
+                <!-- Corpo da tabela rolável -->
+                <div style="max-height: 300px; overflow-y: auto; overflow-x: hidden;">
+                    <table id="TbClientesBody" class="table" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                    <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+                                    @foreach (var usuario in Model)
+                                    {
+                                        <tr>
+                                                   <td style="color: black; border: 1px solid black; padding: 8px;width: 50px">@usuario.Id</td>
+                                                   <td style="color: black; border: 1px solid black; padding: 8px;width: 190px">@usuario.Nome</td>
+                                                   <td style="color: black; border: 1px solid black; padding: 8px; width: 230px">@usuario.Senha</td>
+                                                   <td style="color: black; border: 1px solid black; padding: 8px; width: 312px">@usuario.Email</td>
+                                                   <td style="color: black; border: 1px solid black ; padding: 8px; width: 160px">@usuario.Telefone</td>
+
+                                              @if (usuario.TipoUsuario == 1)
+                                              {
+                                                   <td style="color: black; border: 1px solid black; padding: 8px; width: 170px">Administrador</td>
+                                              }
+                                              else
+                                              {
+                                                   <td style="color: black; border: 1px solid black; padding: 8px; width: 170px">Cliente</td>
+                                              }
+
+                                                    <td class="text-center" style="border: 1px solid black;">
+                                                <button class="btn btn-default" onclick="definirEdt('@usuario.Id', '@usuario.Nome','@usuario.Email', '@usuario.Senha', '@usuario.TipoUsuario', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#EditarUsuario" style="color: #EAE7DC;">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </td>
+                                                    <td class="text-center" style="border: 1px solid black;">
+                                                <button class="btn btn-default" onclick="definirExc('@usuario.Id', '@usuario.Nome', '@usuario.Email', '@usuario.Telefone')" data-bs-toggle="modal" data-bs-target="#ExcluirUsuario" style="color: #EAE7DC;">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                            <td colspan="8" style="text-align: center; color: black; padding: 8px;">Nenhum usuário encontrado.</td>
+                                    </tr>
+                                }
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- Contador de Registros Centralizado com Fonte Maior -->
+            <div style="text-align: center; color: black; margin-top: 10px;">
+                <strong style="font-size: 18px">Total de Usuários: <span id="registroCount">0</span></strong>
+            </div>
+           
+           
+        </div>
+
+
+        <div class="modal fade" id="EditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Editar Cliente</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <p style="color:red">Campos com * vermelho são obrigatórios</p>
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <input id="EdtNome" type="text" class="form-control"
+                                           placeholder="Digite o nome do cliente">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <input id="EdtSenha" type="text" class="form-control"
+                                           placeholder="Digite o a senha">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-7">
+                                    <input id="EdtEmail" type="email" class="form-control"
+                                           placeholder="Digite o email">
+                                </div>
+                                <div class="col-md-5">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    @Html.DropDownList("EdtTipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <input id="EdtTel" type="text" class="form-control"
+                                           placeholder="Digite o telefone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+                            <input type="hidden" id="EdtId" value="" />
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick=" AtualizarUsuario()">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ExcluirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Excluir Cliente</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="ExcNome" class="form-control" placeholder="Digite seu nome..."
+                                       readonly>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" id="ExcEmail" class="form-control" placeholder="Digite seu email..."
+                                       readonly>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" id="ExcTel" class="form-control" placeholder="Digite seu telefone..."
+                                       readonly>
+
+                            </div>
+                            <input type="hidden" id="ExcId" class="form-control" placeholder="Digite seu nome..."
+                                   readonly>
+
+                        </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" onclick="ExcluirUsuario()" class="btn btn-primary">Excluir</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="InserirUsuario" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <p style="color:red">Campos com * vermelho são obrigatórios</p>
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <input id="Nome" type="text" class="form-control"
+                                           placeholder="Digite o nome do cliente">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <input id="Senha" type="text" class="form-control" placeholder="Digite o a senha">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-7">
+                                    <input id="Email" type="email" class="form-control" placeholder="Digite o email">
+                                </div>
+                                <div class="col-md-5">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    @Html.DropDownList("TipoUsuario", ViewBag.lstTipoUsuario as SelectList, "Escolha o tipo de Usuário", new { @class = "form-control", @style = "width:230px; background-color: #EAE7DC; color: #333;", required = "required" })
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <input id="Telefone" type="text" class="form-control"
+                                           placeholder="Digite o telefone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label style="color:red">*</label>
+                                </div>
+                            </div>
+
+                            <input type="hidden" id="IdEdt" value="" />
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" onclick="InserirUsuario()">Adicionar</button>
+                        <!--onclick para chamar a funcao de alteração-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    
+
+    <script src="/lib/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adiciona o SweetAlert2 -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Função para remover o asterisco
+            function removerAsterisco(campo) {
+                var label = campo.closest('.row').querySelector('label');
+
+                // Verifica se o campo foi preenchido
+                if (campo.value.trim() !== "") {
+                    label.style.display = 'none'; // Remove o asterisco
+                } else {
+                    label.style.display = 'inline'; // Exibe o asterisco novamente se o campo estiver vazio
+                }
+            }
+
+            // Função para aplicar o evento de input em todos os campos
+            function adicionarEventos() {
+                // Campos de texto
+                var campos = ['#Nome', '#Senha', '#Email', '#Telefone', '#TipoUsuario'];
+
+                campos.forEach(function (seletor) {
+                    var campo = document.querySelector(seletor);
+                    if (campo) {
+                        campo.addEventListener('input', function () {
+                            removerAsterisco(campo);
+                        });
+                    }
+                });
+            }
+
+            // Inicializa os eventos
+            adicionarEventos();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Função para verificar se o campo foi preenchido e esconder o asterisco
+            function verificarPreenchimento(campo, label) {
+                if (campo.value.trim() !== "" || (campo.tagName === "SELECT" && campo.selectedIndex !== 0)) {
+                    label.style.display = 'none'; // Esconde o asterisco
+                } else {
+                    label.style.display = 'inline'; // Exibe o asterisco se o campo estiver vazio
+                }
+            }
+
+            // Função para adicionar os eventos de input e change nos campos
+            function adicionarEventos() {
+                // Campos a serem monitorados
+                const campos = [
+                    { id: '#EdtNome', type: 'input' },
+                    { id: '#EdtSenha', type: 'input' },
+                    { id: '#EdtEmail', type: 'input' },
+                    { id: '#EdtTel', type: 'input' },
+                    { id: '#EdtTipoUsuario', type: 'select' }
+                ];
+
+                campos.forEach(function (campoInfo) {
+                    const campo = document.querySelector(campoInfo.id);
+                    const label = campo.closest('.row').querySelector('label'); // Encontra o label associado ao campo
+
+                    if (campoInfo.type === 'input') {
+                        // Para campos de input, adicionar evento de 'input'
+                        campo.addEventListener('input', function () {
+                            verificarPreenchimento(campo, label);
+                        });
+                    } else if (campoInfo.type === 'select') {
+                        // Para o select, adicionar evento de 'change'
+                        campo.addEventListener('change', function () {
+                            verificarPreenchimento(campo, label);
+                        });
+                    }
+
+                    // Chama a função para inicializar o estado do campo ao carregar a página
+                    verificarPreenchimento(campo, label);
+                });
+            }
+
+            // Inicializa os eventos
+            adicionarEventos();
+
+            // Função que preenche os campos ao editar o usuário
+            window.definirEdt = function (id, Nome, Email, Senha, TipoUsuario, Telefone) {
+                $('#EdtId').val(id);
+                $('#EdtNome').val(Nome);
+                $('#EdtSenha').val(Senha);
+                $('#EdtEmail').val(Email);
+                $('#EdtTel').val(Telefone);
+
+                // Preenche o campo de senha, se necessário
+                var senhaValue = "";
+                if (Senha) {
+                    $('#EdtSenha').val(Senha);
+                    senhaValue = Senha;
+                }
+
+                // Atualiza o tipo de usuário no dropdown
+                if ($('#EdtTipoUsuario').length > 0) {
+                    $('#EdtTipoUsuario option').filter(function () {
+                        return $(this).val() === TipoUsuario;
+                    }).prop('selected', true);
+                    $('#EdtTipoUsuario').trigger('chosen:updated');
+                } else {
+                    console.error("DropDownList não encontrado.");
+                }
+
+                // Verifica o preenchimento dos campos e esconde os asteriscos
+                const campos = [
+                    { id: '#EdtNome', type: 'input' },
+                    { id: '#EdtSenha', type: 'input' },
+                    { id: '#EdtEmail', type: 'input' },
+                    { id: '#EdtTel', type: 'input' },
+                    { id: '#EdtTipoUsuario', type: 'select' }
+                ];
+
+                // Chama a função de verificação para cada campo ao preencher os dados
+                campos.forEach(function (campoInfo) {
+                    const campo = document.querySelector(campoInfo.id);
+                    const label = campo.closest('.row').querySelector('label');
+                    verificarPreenchimento(campo, label);
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            // Função para atualizar o contador de registros visíveis
+            function atualizarContador() {
+                var visibleRows = $('#TbClientesBody tbody tr:visible').length; // Conta as linhas visíveis
+                $('#registroCount').text(visibleRows); // Atualiza o contador
+            }
+
+            // Quando o usuário digitar no campo de filtro
+            $('#filtro').on('keyup', function () {
+                var value = $(this).val().toLowerCase(); // Pega o valor do campo de filtro e converte para minúsculas
+
+                // Filtra as linhas do corpo da tabela
+                $('#TbClientesBody tbody tr').each(function () {
+                    // Verifica se qualquer célula na linha contém o valor digitado no filtro
+                    var rowText = $(this).text().toLowerCase();
+                    // Exibe ou oculta a linha, dependendo de conter o valor
+                    $(this).toggle(rowText.indexOf(value) > -1);
+                });
+
+                // Atualiza o contador após filtrar as linhas
+                atualizarContador();
+            });
+
+            // Inicializa o contador de registros ao carregar a página
+            atualizarContador();
+        });
+
+        function definirEdt(id, Nome, Email, Senha, TipoUsuario, Telefone) {
+
+            $('#EdtId').val(id);
+            $('#EdtNome').val(Nome);
+            $('#EdtSenha').val(Senha);
+            $('#EdtEmail').val(Email);
+            $('#EdtTel').val(Telefone);
+
+
+            var senhaValue = "";
+            if (Senha) {
+                $('#EditSenha').val(Senha);
+                senhaValue = Senha;
+            }
+
+
+            if ($('#EdtTipoUsuario').length > 0) {
+                $('#EdtTipoUsuario option').filter(function () {
+                    return $(this).val() === TipoUsuario;
+                }).prop('selected', true);
+                $('#EdtTipoUsuario').trigger('chosen:updated');
+            } else {
+                console.error("DropDownList não encontrado.");
+            }
+        }
+
+        function definirExc(id, Nome, Email, Telefone) {
+
+            $('#ExcId').val(id);
+            $('#ExcNome').val(Nome);
+            $('#ExcEmail').val(Email);
+            $('#ExcTel').val(Telefone)
+        }
+
+        function InserirUsuario() {
+
+            var nome = $('#Nome').val();
+            var email = $('#Email').val();
+            var senha = $('#Senha').val();
+            var telefone = $('#Telefone').val();
+            var tipoUsuario = $('select[name="TipoUsuario"] option:selected').val();  // Atualizado
+
+            // Exibe o valor do tipo de usuário no console
+            console.log("Tipo de Usuário selecionado: " + tipoUsuario);
+            if (nome.trim() === "") {
+                alert("Por favor, preencha o campo Nome.");
+                return;
+            }
+            if (senha.trim() === "") {
+                alert("Por favor, preencha o campo Senha.");
+                return;
+            }
+            if (email.trim() === "") {
+                alert("Por favor, insira um email válido.");
+                return;
+            }
+            // Verifica se o tipo de usuário foi selecionado corretamente
+            if (tipoUsuario === "" || tipoUsuario === "Escolha o tipo de Usuário") {
+                alert("Por favor, selecione o tipo de usuário.");
+                return;
+            }
+            if (telefone.trim() === "") {
+                alert("Por favor, insira um número de telefone válido.");
+                return;
+            }
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
+            var dados = {
+                Nome: nome,
+                Email: email,
+                Senha: senha,
+                Telefone: telefone,
+                TipoUsuario: tipoUsuario
+            };
+            console.log(dados);
+            // Faça a chamada AJAX
+            $.ajax({
+                url: '@Url.Action("InserirUsuario", "Usuario")',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Usuário cadastrado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirUsuario').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
+                    } else {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
+                    }
+                },
+                error: function () {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: 'error',
+                        title: 'Erro',
+                        text: 'Ocorreu um erro ao processar a solicitação.',
+                        confirmButtonText: 'OK',
+                        width: '400px',  // Defina a largura desejada aqui
+                        padding: '20px', // Ajuste o preenchimento interno do alerta
+                        customClass: {
+                            popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                        }
+                    });
+                }
+
+            });
+        }
+
+        function AtualizarUsuario() {
+
+            var id = $('#EdtId').val();
+            var nome = $('#EdtNome').val() || ''; // Garante que a variável não seja undefined ou null
+            var email = $('#EdtEmail').val() || ''; // Garante que a variável não seja undefined ou null
+            var senha = $('#EdtSenha').val() || ''; // Garante que a variável não seja undefined ou null
+            var telefone = $('#EdtTel').val() || ''; // Garante que a variável não seja undefined ou null
+            var tipoUsuario = $('#EdtTipoUsuario option:selected').val() || ''; // Garante que a variável não seja undefined ou null
+
+            // Valida os dados
+            if (nome.trim() === "") {
+                alert("Por favor, preencha o campo Nome.");
+                return;
+            }
+            if (senha.trim() === "") {
+                alert("Por favor, preencha o campo Senha.");
+                return;
+            }
+            if (email.trim() === "") {
+                alert("Por favor, insira um email válido.");
+                return;
+            }
+            if (tipoUsuario === "" || tipoUsuario === "Escolha o Tipo de Usuário") {
+                alert("Por favor, selecione o tipo de usuário.");
+                return;
+            }
+            if (telefone.trim() === "") {
+                alert("Por favor, insira um número de telefone válido.");
+                return;
+            }
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
+            var dados = {
+                Id: id, // ID do usuário a ser atualizado
+                Nome: nome,
+                Email: email,
+                Senha: senha,
+                Telefone: telefone,
+                TipoUsuario: tipoUsuario
+            };
+
+            // Requisição AJAX para atualizar o usuário
+            $.ajax({
+                url: '@Url.Action("AtualizarUsuario", "Usuario")',  // URL para a ação de atualizar no servidor
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Usuário atualizado com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#EditarUsuario').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
+
+
+                    } else {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
+                    }
+                },
+                error: function () {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: 'error',
+                        title: 'Erro',
+                        text: resultado.message,
+                        confirmButtonText: 'OK',
+                        width: '400px',  // Defina a largura desejada aqui
+                        padding: '20px', // Ajuste o preenchimento interno do alerta
+                        customClass: {
+                            popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                        }
+                    });
+                }
+            });
+        }
+
+        function ExcluirUsuario() {
+
+            var id = $('#ExcId').val();  // Pega o valor do ID do campo hidden
+            console.log("ID a ser excluído: ", id);  // Verifique se o ID está sendo corretamente recuperado
+
+            // Show the overlay and loader
+            $("#overlay").show();  // Exibir o overlay escuro
+            $("#loader").show();   // Exibir o loader
+
+            var dados = { Id: id };  // Dados a enviar para o servidor (ID do usuário)
+
+            // Requisição AJAX para excluir o usuário
+            $.ajax({
+                url: '@Url.Action("ExcluirUsuario", "Usuario")',
+                type: "POST",
+                dataType: "json",
+                data: dados,
+                success: function (resultado) {
+                    // Hide the overlay and loader after the response
+                    $("#overlay").hide();
+                    $("#loader").hide();
+                    if (resultado.success) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'success',
+                            title: 'Sucesso',
+                            text: 'Usuário excluido com sucesso!',
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        }).then(function () {
+                            // Fecha o modal
+                            $('#InserirUsuario').modal('hide');
+                            // Recarrega a página
+                            location.reload(); // Recarrega a página atual
+                        });
+                    } else {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: 'error',
+                            title: 'Erro',
+                            text: resultado.message,
+                            confirmButtonText: 'OK',
+                            width: '400px',  // Defina a largura desejada aqui
+                            padding: '20px', // Ajuste o preenchimento interno do alerta
+                            customClass: {
+                                popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                            }
+                        });
+                    }
+                },
+                error: function () {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: 'error',
+                        title: 'Erro',
+                        text: 'Ocorreu um erro ao processar a solicitação.',
+                        confirmButtonText: 'OK',
+                        width: '100px',
+                        height: '100px',
+                        customClass: {
+                            popup: 'custom-popup'  // Adiciona uma classe customizada (opcional)
+                        }
+                    });
+                }
+            });
+        }
+
+    </script>
+
+</body>

@@ -1,0 +1,131 @@
+wwwroot\css\agendamento_cliente.css
+wwwroot\css\login.css
+wwwroot\css\main.css
+wwwroot\css\responsive.css
+wwwroot\css\submenu.css
+wwwroot\css\usuario_index.css
+wwwroot\favicon.ico
+wwwroot\images\about\download.jpeg
+wwwroot\images\blogs\blog-1.png
+wwwroot\images\blogs\blog-2.png
+wwwroot\images\blogs\blog-3.png
+wwwroot\images\blogs\blog-4.png
+wwwroot\images\blogs\blog-5.png
+wwwroot\images\blogs\manutenção-corretiva.webp
+wwwroot\images\blogs\manutenção-predetiva.jpg
+wwwroot\images\blogs\manutenção-preventiva.jpg
+wwwroot\images\blogs\Serviços De Instalação E Configuração.webp
+wwwroot\images\blogs\suporte-local.jpg
+wwwroot\images\blogs\suporte-tecnico.png
+wwwroot\images\home\download.png
+wwwroot\images\home\logo.png
+wwwroot\images\portifolio\image 3.jpg
+wwwroot\images\portifolio\image 4.jpeg
+wwwroot\images\portifolio\image 4.jpg
+wwwroot\images\portifolio\imagem 2.jpg
+wwwroot\images\portifolio\imagem 5.jpg
+wwwroot\images\portifolio\imagem 6.jpg
+wwwroot\images\portifolio\images 1.jpg
+wwwroot\images\Testimonials\image 1.jpeg
+wwwroot\images\Testimonials\image 2.jpeg
+wwwroot\images\Testimonials\image 3.jpeg
+wwwroot\images\Testimonials\image 4.jpeg
+wwwroot\images\Testimonials\image 5.jpeg
+wwwroot\images\Testimonials\pic-1.png
+wwwroot\images\Testimonials\pic-2.png
+wwwroot\images\Testimonials\pic-3.png
+wwwroot\images\Testimonials\pic-4.png
+wwwroot\images\Testimonials\pic-5.png
+wwwroot\js\blog-slider.js
+wwwroot\js\counter-up.js
+wwwroot\js\portfolio.js
+wwwroot\js\script.js
+wwwroot\js\scroll-spy.js
+wwwroot\js\testi-slider.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\bootstrap-icons\bootstrap-icons.css
+wwwroot\lib\bootstrap-icons\bootstrap-icons.json
+wwwroot\lib\bootstrap-icons\bootstrap-icons.min.css
+wwwroot\lib\bootstrap-icons\bootstrap-icons.scss
+wwwroot\lib\bootstrap-icons\fonts\bootstrap-icons.woff
+wwwroot\lib\bootstrap-icons\fonts\bootstrap-icons.woff2
+wwwroot\lib\boxicons\css\animations.css
+wwwroot\lib\boxicons\css\boxicons.css
+wwwroot\lib\boxicons\css\boxicons.min.css
+wwwroot\lib\boxicons\css\transformations.css
+wwwroot\lib\boxicons\fonts\boxicons.eot
+wwwroot\lib\boxicons\fonts\boxicons.svg
+wwwroot\lib\boxicons\fonts\boxicons.ttf
+wwwroot\lib\boxicons\fonts\boxicons.woff
+wwwroot\lib\boxicons\fonts\boxicons.woff2
+wwwroot\lib\glightbox\css\glightbox.css
+wwwroot\lib\glightbox\css\glightbox.min.css
+wwwroot\lib\glightbox\css\plyr.css
+wwwroot\lib\glightbox\css\plyr.min.css
+wwwroot\lib\glightbox\js\glightbox.js
+wwwroot\lib\glightbox\js\glightbox.min.js
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\swiper\swiper-bundle.min.css
+wwwroot\lib\swiper\swiper-bundle.min.js
+wwwroot\lib\swiper\swiper-bundle.min.js.map
+wwwroot\vendors\jquery\jquery-3.6.0.js
+wwwroot\vendors\magnific-popup\jquery.magnific-popup.js
+wwwroot\vendors\magnific-popup\magnific-popup.css
+wwwroot\vendors\swiper\swiper.css
+wwwroot\vendors\swiper\swiper.js
+wwwroot\vendors\typed\typed.js

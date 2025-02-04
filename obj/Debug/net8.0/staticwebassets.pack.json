@@ -1,0 +1,553 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MaqCenter.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MaqCenter.w9z4br2mc7.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\css\\agendamento_cliente.css",
+      "PackagePath": "staticwebassets\\css\\agendamento_cliente.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\css\\submenu.css",
+      "PackagePath": "staticwebassets\\css\\submenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\css\\usuario_index.css",
+      "PackagePath": "staticwebassets\\css\\usuario_index.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\image 1.jpeg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\image 1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\image 2.jpeg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\image 2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\image 3.jpeg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\image 3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\image 4.jpeg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\image 4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\image 5.jpeg",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\image 5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\pic-1.png",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\pic-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\pic-2.png",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\pic-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\pic-3.png",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\pic-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\pic-4.png",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\pic-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\Testimonials\\pic-5.png",
+      "PackagePath": "staticwebassets\\images\\Testimonials\\pic-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\about\\download.jpeg",
+      "PackagePath": "staticwebassets\\images\\about\\download.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\Serviços De Instalação E Configuração.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\Serviços De Instalação E Configuração.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\blog-1.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\blog-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\blog-2.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\blog-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\blog-3.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\blog-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\blog-4.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\blog-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\blog-5.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\blog-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\manutenção-corretiva.webp",
+      "PackagePath": "staticwebassets\\images\\blogs\\manutenção-corretiva.webp"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\manutenção-predetiva.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\manutenção-predetiva.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\manutenção-preventiva.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\manutenção-preventiva.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\suporte-local.jpg",
+      "PackagePath": "staticwebassets\\images\\blogs\\suporte-local.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\blogs\\suporte-tecnico.png",
+      "PackagePath": "staticwebassets\\images\\blogs\\suporte-tecnico.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\home\\download.png",
+      "PackagePath": "staticwebassets\\images\\home\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\home\\logo.png",
+      "PackagePath": "staticwebassets\\images\\home\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\image 3.jpg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\image 3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\image 4.jpeg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\image 4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\image 4.jpg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\image 4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\imagem 2.jpg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\imagem 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\imagem 5.jpg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\imagem 5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\imagem 6.jpg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\imagem 6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\images\\portifolio\\images 1.jpg",
+      "PackagePath": "staticwebassets\\images\\portifolio\\images 1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\js\\blog-slider.js",
+      "PackagePath": "staticwebassets\\js\\blog-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\js\\counter-up.js",
+      "PackagePath": "staticwebassets\\js\\counter-up.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\js\\portfolio.js",
+      "PackagePath": "staticwebassets\\js\\portfolio.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\js\\scroll-spy.js",
+      "PackagePath": "staticwebassets\\js\\scroll-spy.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\js\\testi-slider.js",
+      "PackagePath": "staticwebassets\\js\\testi-slider.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\css\\animations.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\animations.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\css\\transformations.css",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\css\\transformations.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\glightbox\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\plyr.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\glightbox\\css\\plyr.min.css",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\css\\plyr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\lib\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\lib\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\vendors\\jquery\\jquery-3.6.0.js",
+      "PackagePath": "staticwebassets\\vendors\\jquery\\jquery-3.6.0.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\vendors\\magnific-popup\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\vendors\\magnific-popup\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\vendors\\magnific-popup\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\vendors\\magnific-popup\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\vendors\\swiper\\swiper.css",
+      "PackagePath": "staticwebassets\\vendors\\swiper\\swiper.css"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\vendors\\swiper\\swiper.js",
+      "PackagePath": "staticwebassets\\vendors\\swiper\\swiper.js"
+    },
+    {
+      "Id": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\wwwroot\\vendors\\typed\\typed.js",
+      "PackagePath": "staticwebassets\\vendors\\typed\\typed.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MaqCenter.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MaqCenter.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MaqCenter.props",
+      "PackagePath": "build\\MaqCenter.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MaqCenter.props",
+      "PackagePath": "buildMultiTargeting\\MaqCenter.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MaqCenter.props",
+      "PackagePath": "buildTransitive\\MaqCenter.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

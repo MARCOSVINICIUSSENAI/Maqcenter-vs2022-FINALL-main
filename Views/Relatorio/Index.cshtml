@@ -1,0 +1,145 @@
+﻿<body>
+    <!-- Botão de Scroll para o topo -->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <section>
+        <div class="box-container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <div class="content" style="width: 50%; margin-top: 100px;">
+                <!-- Aumentei a largura do container da caixa de filtros -->
+                <div class="filter-container">
+                    <h3>Filtrar Relatório</h3>
+
+                    <div class="filter-group">
+                        <label for="campoFiltro1">Filtro 1:</label>
+                        <input type="text" id="campoFiltro1" placeholder="Digite o filtro" class="filter-input">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="campoFiltro2">Filtro 2:</label>
+                        <input type="text" id="campoFiltro2" placeholder="Digite o filtro" class="filter-input">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="campoFiltro3">Filtro 3:</label>
+                        <input type="text" id="campoFiltro3" placeholder="Digite o filtro" class="filter-input">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="colunaFiltro1">Escolha a coluna 1:</label>
+                        <select id="colunaFiltro1" class="filter-select">
+                            <option value="coluna1">Coluna 1</option>
+                            <option value="coluna2">Coluna 2</option>
+                            <option value="coluna3">Coluna 3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="colunaFiltro2">Escolha a coluna 2:</label>
+                        <select id="colunaFiltro2" class="filter-select">
+                            <option value="coluna1">Coluna 1</option>
+                            <option value="coluna2">Coluna 2</option>
+                            <option value="coluna3">Coluna 3</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="colunaFiltro3">Escolha a coluna 3:</label>
+                        <select id="colunaFiltro3" class="filter-select">
+                            <option value="coluna1">Coluna 1</option>
+                            <option value="coluna2">Coluna 2</option>
+                            <option value="coluna3">Coluna 3</option>
+                        </select>
+                    </div>
+
+                    <button id="pesquisarBtn" class="btn">Pesquisar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela jTable -->
+    <section class="tabela-relatorio">
+        <div id="tabelaContainer"></div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/vendors/typed/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jtable@2.5.0/dist/jtable.min.js"></script>
+
+    <!-- Estilo CSS -->
+    <style>
+        .filters {
+            padding: 30px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .filter-container {
+            max-width: 1000px; /* Aumentei o tamanho máximo */
+            margin: 0 auto;
+            background-color: #04abe3;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .filter-container h3 {
+                font-size: 24px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+            .filter-group label {
+                display: block;
+                font-size: 14px;
+                color: black;
+                margin-bottom: 5px;
+            }
+
+        .filter-input,
+        .filter-select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+            .filter-input:focus,
+            .filter-select:focus {
+                border-color: #4CAF50;
+                outline: none;
+            }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #45a049;
+            }
+
+        #tabelaContainer {
+            margin-top: 30px;
+            background-color: #04abe3;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</body>
