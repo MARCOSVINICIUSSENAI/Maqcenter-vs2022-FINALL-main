@@ -694,4 +694,5 @@ C:\Users\Aluno Noite\Downloads\Maqcenter-vs2022-FINAL-main\Maqcenter-vs2022-FINA
 C:\Users\Aluno Noite\Downloads\Maqcenter-vs2022-FINAL-main\Maqcenter-vs2022-FINAL-main\obj\Debug\net8.0\MaqCenter.pdb
 C:\Users\Aluno Noite\Downloads\Maqcenter-vs2022-FINAL-main\Maqcenter-vs2022-FINAL-main\obj\Debug\net8.0\MaqCenter.genruntimeconfig.cache
 C:\Users\Aluno Noite\Downloads\Maqcenter-vs2022-FINAL-main\Maqcenter-vs2022-FINAL-main\obj\Debug\net8.0\ref\MaqCenter.dll
+C:\Users\Aluno Noite\Downloads\Maqcenter-vs2022-FINAL-main\Maqcenter-vs2022-FINAL-main\obj\Debug\net8.0\MaqCenter.sourcelink.json
 C:\Users\Aluno Noite\Downloads\Maqcenter-vs2022-FINAL-main\Maqcenter-vs2022-FINAL-main\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

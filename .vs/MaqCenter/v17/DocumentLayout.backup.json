@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\repositorio\\relatoriorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:repositorio\\relatoriorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\views\\relatorio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:views\\relatorio\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\views\\shared\\_layoutgerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:views\\shared\\_layoutgerenciamento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\orm\\viewagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:orm\\viewagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\orm\\tbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:orm\\tbusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\orm\\tbservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:orm\\tbservico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\orm\\tbagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:orm\\tbagendamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\orm\\dbmaqcentercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:orm\\dbmaqcentercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|c:\\users\\aluno noite\\downloads\\maqcenter-vs2022-final-main\\maqcenter-vs2022-final-main\\controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B61AF4-8089-44B7-9845-A86F832EB4D0}|MaqCenter.csproj|solutionrelative:controllers\\relatoriocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "_LayoutGerenciamento.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Views\\Shared\\_LayoutGerenciamento.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutGerenciamento.cshtml",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Views\\Shared\\_LayoutGerenciamento.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutGerenciamento.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T19:46:53.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewAgendamento.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\ViewAgendamento.cs",
+              "RelativeDocumentMoniker": "ORM\\ViewAgendamento.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\ViewAgendamento.cs",
+              "RelativeToolTip": "ORM\\ViewAgendamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:52:09.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TbUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\TbUsuario.cs",
+              "RelativeDocumentMoniker": "ORM\\TbUsuario.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\TbUsuario.cs",
+              "RelativeToolTip": "ORM\\TbUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:52:05.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TbServico.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\TbServico.cs",
+              "RelativeDocumentMoniker": "ORM\\TbServico.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\TbServico.cs",
+              "RelativeToolTip": "ORM\\TbServico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:52:01.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TbAgendamento.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\TbAgendamento.cs",
+              "RelativeDocumentMoniker": "ORM\\TbAgendamento.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\TbAgendamento.cs",
+              "RelativeToolTip": "ORM\\TbAgendamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:51:57.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbMaqcenterContext.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\DbMaqcenterContext.cs",
+              "RelativeDocumentMoniker": "ORM\\DbMaqcenterContext.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\ORM\\DbMaqcenterContext.cs",
+              "RelativeToolTip": "ORM\\DbMaqcenterContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:51:51.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Views\\Relatorio\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Relatorio\\Index.cshtml",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Views\\Relatorio\\Index.cshtml",
               "RelativeToolTip": "Views\\Relatorio\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAFIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-04T18:27:15.044Z",
+              "WhenOpened": "2025-02-05T18:37:23.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RelatorioController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Controllers\\RelatorioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RelatorioController.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Controllers\\RelatorioController.cs",
+              "RelativeToolTip": "Controllers\\RelatorioController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:28:19.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RelatorioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Repositorio\\RelatorioRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositorio\\RelatorioRepositorio.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Maqcenter-vs2022-FINAL-main\\Maqcenter-vs2022-FINAL-main\\Repositorio\\RelatorioRepositorio.cs",
+              "RelativeToolTip": "Repositorio\\RelatorioRepositorio.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T18:27:22.551Z",
               "EditorCaption": ""
             }
           ]

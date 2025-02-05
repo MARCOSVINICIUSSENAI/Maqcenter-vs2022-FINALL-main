@@ -38,10 +38,12 @@ public partial class DbMaqcenterContext : DbContext
 
             entity.HasOne(d => d.FkServicoNavigation).WithMany(p => p.TbAgendamentos)
                 .HasForeignKey(d => d.FkServico)
+                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_TbAgendamento_TbServico");
 
             entity.HasOne(d => d.FkUsuarioNavigation).WithMany(p => p.TbAgendamentos)
                 .HasForeignKey(d => d.FkUsuario)
+                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_TbAgendamento_TbUsuario");
         });
 
@@ -85,9 +87,6 @@ public partial class DbMaqcenterContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Nome)
-                .HasMaxLength(50)
-                .IsUnicode(false);
-            entity.Property(e => e.Senha)
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.Telefone)

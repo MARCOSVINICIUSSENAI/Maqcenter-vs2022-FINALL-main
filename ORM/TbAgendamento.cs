@@ -17,7 +17,7 @@ public partial class TbAgendamento
 
     public int FkServico { get; set; }
 
-    public virtual TbServico? FkServicoNavigation { get; set; }
+    public virtual TbServico FkServicoNavigation { get; set; } = null!;
 
-    public virtual TbUsuario? FkUsuarioNavigation { get; set; }
+    public virtual TbUsuario FkUsuarioNavigation { get; set; } = null!;
 }

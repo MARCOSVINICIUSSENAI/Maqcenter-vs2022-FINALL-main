@@ -7,9 +7,11 @@ public partial class ViewAgendamento
 {
     public int Id { get; set; }
 
-    public DateTime? DtHoraAgendamento { get; set; }
+    public DateTime DtHoraAgendamento { get; set; }
 
-    public DateOnly? DataAtendimento { get; set; }
+    public DateOnly DataAtendimento { get; set; }
+
+    public TimeOnly Horario { get; set; }
 
     public string TipoServico { get; set; } = null!;
 
@@ -20,10 +22,4 @@ public partial class ViewAgendamento
     public string Email { get; set; } = null!;
 
     public string Telefone { get; set; } = null!;
-
-    public TimeOnly? Horario { get; set; }
-
-    public string Senha { get; set; } = null!;
-
-    public int TipoUsuario { get; set; }
 }
